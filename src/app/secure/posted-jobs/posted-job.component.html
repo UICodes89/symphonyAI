@@ -1,6 +1,6 @@
 
  <mat-form-field>
-    <input matInput (keyup)="search($event.target.value)" placeholder="Filter">
+    <input matInput (keyup)="search($event.target.value)" placeholder="Filter" #filter>
   </mat-form-field>
 
   <div class="row mb-3 px-3">
@@ -8,7 +8,8 @@
           <mat-chip (click)="toggleOpen()" [ngClass]="{'highlight': openFilter}">Open</mat-chip>
           <mat-chip (click)="toggleClosed()" [ngClass]="{'highlight': closeFilter}">Closed</mat-chip>
         </mat-chip-list>
-        <button mat-raised-button color="accent" class="search-button" (click)="applyFilter()" [disabled]="(searchString.length)?false:true">Search</button>
+        <button mat-raised-button color="accent" class="search-button" (click)="applyFilter()" >Search</button>
+        <button mat-raised-button color="primary" class="clear-button" (click)="clearFilter()" >Clear</button>
   </div>
   <div class="col-12 pl-0 pt-3">
       <h4>Posted Jobs</h4>

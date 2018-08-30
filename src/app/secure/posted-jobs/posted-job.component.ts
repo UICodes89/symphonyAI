@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild} from '@angular/core';
 import {JobdetailsService} from "../../service/jobdetails.service";
 import {SelectionModel} from '@angular/cdk/collections';
 import {MatTableDataSource} from '@angular/material';
@@ -13,12 +13,16 @@ import {jobs} from "../../models/job.module"
 })
 export class PostedJobComponent implements OnInit {
   @Input() postedJobs:object;
+  @ViewChild('filter') searchInput;
   dataSource;
   searchString:string="";
   selectedRowIndex:string="";
   closeFilter:boolean=false;
   openFilter:boolean=false;
-  constructor(private http:JobdetailsService) { }
+  
+  constructor(
+    private http:JobdetailsService,
+  ) { }
 
   ngOnInit() {
     this.http.getJobs().subscribe(data => {
@@ -67,11 +71,21 @@ export class PostedJobComponent implements OnInit {
   }
 
   removeFilters(){
-      debugger;
       if(!this.closeFilter && !this.openFilter){
         this.dataSource.filter = ' ';
         this.showDetails(this.dataSource.filteredData[0]);
       }
   }
+
+  clearFilter(){
+    this.searchString = "";
+    this.searchInput.nativeElement.value = "";
+    if(!this.searchString.length){
+      this.dataSource.filter = ' ';
+      this.showDetails(this.dataSource.filteredData[0]); 
+    }
+  }
+
+  
 
 }
