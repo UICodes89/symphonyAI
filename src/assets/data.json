@@ -1,0 +1,146 @@
+[
+    { 
+        "company":"IT soft",
+        "Title":"Java Eng", 
+        "DatePosted":"20-8-13", 
+        "status":"open", 
+        "shortListed":[
+            {
+                "name":"Raju", 
+                "worksAt":"PLM Inc", 
+                "exp": "6 years", 
+                "ctc":"10L", 
+                "interviews":[
+                    {
+                        "interview":"ROund#1", 
+                        "interviewer":"vijay", 
+                        "date":"20-8-13", 
+                        "result":"selected"
+                    },
+                    {
+                        "interview":"HR Round", 
+                        "interviewer":"Singh, HR", 
+                        "date":"27-8-13", 
+                        "result":"Offered"
+                    }
+                ]
+            },
+            {
+                "name":"Abhay", 
+                "worksAt":"SysTel", 
+                "exp": "10 years", 
+                "ctc":"10L", 
+                "interviews":[
+                    {
+                        "interview":"ROund#1", 
+                        "interviewer":"vijay", 
+                        "date":"20-8-13", 
+                        "result":"selected"
+                    },
+                    {
+                        "interview":"HR Round", 
+                        "interviewer":"Singh, HR", 
+                        "date":"27-8-13", 
+                        "result":"joined"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "company":"Symphony AI",
+        "Title":"UI Development", 
+        "DatePosted":"20-8-13", 
+        "status":"open", 
+        "shortListed":[
+            {
+                "name":"shivek", 
+                "worksAt":"PLM Inc", 
+                "exp": "4 years", 
+                "ctc":"8L", 
+                "interviews":[
+                    {
+                        "interview":"ROund#1", 
+                        "interviewer":"vijay", 
+                        "date":"20-8-13", 
+                        "result":"selected"
+                    },
+                    {
+                        "interview":"HR Round", 
+                        "interviewer":"Singh, HR", 
+                        "date":"27-8-13", 
+                        "result":"Rejected"
+                    }
+                ]
+            },
+            {
+                "name":"Abhay", 
+                "worksAt":"SysTel", 
+                "exp": "10 years", 
+                "ctc":"10L", 
+                "interviews":[
+                    {
+                        "interview":"ROund#1", 
+                        "interviewer":"vijay", 
+                        "date":"20-8-13", 
+                        "result":"selected"
+                    },
+                    {
+                        "interview":"HR Round", 
+                        "interviewer":"Singh, HR", 
+                        "date":"27-8-13", 
+                        "result":"offer pending"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "company":"Capgemini",
+        "Title":"Java Eng", 
+        "DatePosted":"20-8-13", 
+        "status":"closed", 
+        "shortListed":[
+            {
+                "name":"Prince", 
+                "worksAt":"PLM Inc", 
+                "exp": "6 years", 
+                "ctc":"10L", 
+                "interviews":[
+                    {
+                        "interview":"Round#1", 
+                        "interviewer":"vijay", 
+                        "date":"20-8-13", 
+                        "result":"selected"
+                    },
+                    {
+                        "interview":"HR Round", 
+                        "interviewer":"Singh, HR", 
+                        "date":"27-8-13", 
+                        "result":"pending"
+                    }
+                ]
+            },
+            {
+                "name":"Ajay", 
+                "worksAt":"SysTel", 
+                "exp": "10 years", 
+                "ctc":"10L", 
+                "interviews":[
+                    {
+                        "interview":"Round#1", 
+                        "interviewer":"vijay", 
+                        "date":"20-8-13", 
+                        "result":"selected"
+                    },
+                    {
+                        "interview":"HR Round", 
+                        "interviewer":"Singh, HR", 
+                        "date":"27-8-13", 
+                        "result":"joined"
+                    }
+                ]
+            }
+        ]
+    }
+]

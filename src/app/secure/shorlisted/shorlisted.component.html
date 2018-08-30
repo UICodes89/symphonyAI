@@ -1,0 +1,34 @@
+
+  
+  <div class="col-12 pl-0">
+      <h4>Shortlisted</h4>
+    </div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="Name">
+      <th mat-header-cell *matHeaderCellDef> Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="Works At">
+      <th mat-header-cell *matHeaderCellDef> Works At </th>
+      <td mat-cell *matCellDef="let element"> {{element.worksAt}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Experience">
+      <th mat-header-cell *matHeaderCellDef> Experience </th>
+      <td mat-cell *matCellDef="let element"> {{element.exp}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="CTC">
+      <th mat-header-cell *matHeaderCellDef> CTC </th>
+      <td mat-cell *matCellDef="let element"> {{element.ctc}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="showDetails(row);" [ngClass]="{'highlight': selectedRowName == row.name}"></tr>
+  </table>
