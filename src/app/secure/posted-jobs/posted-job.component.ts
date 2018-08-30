@@ -80,6 +80,8 @@ export class PostedJobComponent implements OnInit {
   clearFilter(){
     this.searchString = "";
     this.searchInput.nativeElement.value = "";
+    this.closeFilter = false;
+    this.openFilter = false;
     if(!this.searchString.length){
       this.dataSource.filter = ' ';
       this.showDetails(this.dataSource.filteredData[0]); 
